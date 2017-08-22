@@ -5,6 +5,4 @@ ___
 
 How to usage: [https://github.com/lafin/fast-brief](https://github.com/lafin/fast-brief)
 
-![](image_2.png)
-
 port of the [code](https://github.com/eduardolundgren/tracking.js/blob/master/src/features/Fast.js)
