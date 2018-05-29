@@ -22,7 +22,7 @@
 package fast
 
 // FindCorners - Finds corners coordinates on the graysacaled image.
-func FindCorners(pixels []int, width, height, threshold int) []int {
+func FindCorners(pixels map[int]int, width, height, threshold int) []int {
 	var circleOffsets = getCircleOffsets(width)
 	var circlePixels [16]int
 	var corners []int
@@ -73,14 +73,14 @@ func isCorner(p int, circlePixels [16]int, threshold int) bool {
 
 			if !isBrighter(p, circlePixel, threshold) {
 				brighter = false
-				if darker == false {
+				if !darker {
 					break
 				}
 			}
 
 			if !isDarker(p, circlePixel, threshold) {
 				darker = false
-				if brighter == false {
+				if !brighter {
 					break
 				}
 			}
