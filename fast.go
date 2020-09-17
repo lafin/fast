@@ -19,6 +19,7 @@
  * http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.60.3991&rep=rep1&type=pdf
  */
 
+// Package fast - implementation of the algorithm of the same name
 package fast
 
 // FindCorners - Finds corners coordinates on the graysacaled image.
